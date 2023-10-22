@@ -1,0 +1,6 @@
+<div class="text-center" *ngIf="movies.length==0">
+    <div class="loader"></div>
+</div>
+<div class="card-grid">
+    <app-movie-card *ngFor="let m of movies" [movie]="m"></app-movie-card>
+</div>
